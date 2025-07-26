@@ -32,16 +32,18 @@ const testData1 = [7.5, 8, 6.5, 0, 8.5, 4, 0];
 const wholeWeek = function (arr) {
   let myHours = 0;
   let maxHours = arr[0];
+
   for (i = 0; i < arr.length; i++) {
     myHours += arr[i];
     if (arr[i] > maxHours) maxHours = arr[i];
-    if( )
   }
   const totalHours = myHours;
   const averageHours = myHours / arr.length;
   const daysWorked = arr.length;
+  const status =
+    myHours > 35 ? 'this person is full time' : 'this person is part time';
 
-  return trueData1.push(totalHours, averageHours, maxHours, daysWorked);
+  return trueData1.push(totalHours, averageHours, maxHours, daysWorked, status);
 };
 
 wholeWeek(testData1);
