@@ -15,23 +15,22 @@ body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
   background-color: #222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  /* background-color: #60b347; */
 }
 
+/* LAYOUT */
 header {
   position: relative;
+  height: 35vh;
   border-bottom: 7px solid #eee;
 }
 
 main {
+  height: 65vh;
   color: #eee;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-top: 5rem;
 }
 
 .left {
@@ -46,6 +45,7 @@ main {
   font-size: 2rem;
 }
 
+/* ELEMENTS STYLE */
 h1 {
   font-size: 4rem;
   text-align: center;
