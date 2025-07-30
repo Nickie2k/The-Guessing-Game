@@ -17,7 +17,6 @@ document.querySelector('.message').textContent = 'What is your guess?'; // Manip
 
 let score = 20; // Score counter
 let highScore = 0;
-
 //* SYSTEM GENERATES A RANDOM NUMBER
 
 let guessMyNumber = Math.trunc(Math.random() * 20) + 1;
@@ -72,6 +71,11 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.score').textContent = score;
     document.querySelector('body').style.backgroundColor = '#c74e4eff';
   }
+  if (score > highScore) {
+    highScore = 0;
+    highScore = score;
+    document.querySelector('.highscore').textContent = highScore;
+  }
 });
 
 //* RELOAD BUTTON TO RESTART THE GAME
@@ -81,4 +85,5 @@ document.querySelector('.btn.again').addEventListener('click', function () {
   guessMyNumber = Math.trunc(Math.random() * 20) + 1;
   document.querySelector('.number').textContent = guessMyNumber;
   document.querySelector('.guess').textContent = ''; // reset the input to empty
+  document.querySelector('body').style.backgroundColor = '#4c4bb8ff';
 });
