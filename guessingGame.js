@@ -25,10 +25,10 @@ document.querySelector('.number').textContent = guessMyNumber; // 1.  System giv
 //* LOGICAL PROCESS OF THE CLICK BUTTON
 
 document.querySelector('.btn.again').addEventListener('again', function () {
-  score = 20;
+  // score = 20;
   guessMyNumber = Math.trunc(Math.random() * 20) + 1;
 
-  document.querySelector('.score').textContent = 20;
+  // document.querySelector('.score').textContent = 20;
   document.querySelector('.message').textContent = 'What is your guess?';
 });
 
